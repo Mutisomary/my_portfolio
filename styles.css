@@ -86,7 +86,7 @@ span {
 }
 .home-img img {
     width: 25vw;
-    border-radius: 5%;
+    border-radius: 50%;
     animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage {
@@ -138,12 +138,11 @@ span {
 }
 
 .about {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     background: var(--snd-bg-color);
-    flex-wrap: wrap;
 }
 
 .about-img img {
@@ -211,7 +210,7 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 .portfolio-container .portfolio-box {
     position: relative;
@@ -383,6 +382,9 @@ span {
     }
     .about img {
         width: 100%;
+    }
+    .about {
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 617px) {
